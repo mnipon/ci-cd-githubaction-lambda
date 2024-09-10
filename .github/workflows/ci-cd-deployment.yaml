@@ -12,10 +12,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3.6.0 # Explicit version
-      - name: Set up Node.js
-        uses: actions/setup-node@v3.7.0 # Explicit version
-        with:
-          node-version: 20
       - name: Install zip tool
         uses: montudor/action-zip@v1
       - name: Create Zip file for Lambda function
